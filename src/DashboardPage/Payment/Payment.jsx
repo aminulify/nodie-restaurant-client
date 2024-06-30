@@ -20,7 +20,7 @@ const Payment = () => {
     
 
     return (
-        <div className='w-[90%] py-20 h-screen'>
+        <div className='w-[90%] bg-white py-20 h-screen'>
 
             <Helmet>
                 <title>Nodie Cods | Pay</title>

@@ -68,7 +68,7 @@ const UserReservation = () => {
     }
 
     return (
-        <div className='md:w-[85%] w-full my-10'>
+        <div className='md:w-[85%] bg-white w-full py-10'>
             <div>
                 <SectionTitle subHeading="-- Book Seats --" heading='Reservation'></SectionTitle>
             </div>

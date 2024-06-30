@@ -52,7 +52,7 @@ const ManageBookings = () => {
     }
 
     return (
-        <div className='w-[90%] h-screen'>
+        <div className='w-[90%] h-screen bg-white'>
             <Helmet>
                 <title>Nodie Cods | Manage Bookings</title>
             </Helmet>

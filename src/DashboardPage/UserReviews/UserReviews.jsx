@@ -48,7 +48,7 @@ const UserReviews = () => {
 
 
     return (
-        <div className='md:w-[85%] w-full my-10'>
+        <div className='md:w-[85%] bg-white w-full my-10'>
         <div>
             <SectionTitle subHeading="-- Say the truth --" heading='Reviews'></SectionTitle>
         </div>

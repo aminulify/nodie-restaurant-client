@@ -27,7 +27,7 @@ const Testimonials = () => {
         .then(data=> setReviews(data))
     },[])
     return (
-        <div className='md:mx-36 mx-10 mb-16'>
+        <div className='md:mx-36 mx-10 pb-16 bg-white'>
             {/* section heading title  */}
             <SectionTitle heading='Testimonials' subHeading='---What Our Clients Say---'></SectionTitle>
 

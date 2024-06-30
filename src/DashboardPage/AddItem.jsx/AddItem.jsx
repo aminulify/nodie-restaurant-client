@@ -55,7 +55,7 @@ const AddItem = () => {
         
     }
     return (
-        <div className='md:w-[85%] w-full my-10'>
+        <div className='md:w-[85%] w-full py-10 bg-white'>
             <div>
                 <SectionTitle subHeading="What's New" heading='Add an item'></SectionTitle>
             </div>

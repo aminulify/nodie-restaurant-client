@@ -149,7 +149,7 @@ const CheckoutForm = ({ price, cart, refetch }) => {
     }
     return (
         <>
-        <form className='m-10' onSubmit={handleSubmit}>
+        <form className='p-10 bg-white' onSubmit={handleSubmit}>
         <CardElement
           options={{
             style: {

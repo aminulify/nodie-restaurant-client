@@ -36,7 +36,7 @@ const UserHome = () => {
 
 
     return (
-        <div className='w-[90%] h-screen my-6 md:my-10'>
+        <div className='w-[90%] bg-white h-screen my-6 md:my-10'>
             <h2 className='text-3xl font-semibold mx-16 md:mx-0'><span className='heading-font text-4xl'>Welcome,</span> <span className='text-[#597445]'>{user.displayName}</span></h2>
 
             <div className="grid md:grid-cols-2 grid-cols-1 gap-5 justify-center pt-8 pb-5">
