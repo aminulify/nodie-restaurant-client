@@ -1,0 +1,8 @@
+.food-over-view-img{
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.324), rgba(0, 0, 0, 0.174)),url('../../../public/assets/home/chef-service.jpg');
+    background-attachment: fixed;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+
+}

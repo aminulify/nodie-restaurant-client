@@ -1,0 +1,6 @@
+.featured-bg-image{
+    background: linear-gradient(to left, #597445b3, rgba(9, 18, 3, 0.721)),url('../../../public/assets/home/featured.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}

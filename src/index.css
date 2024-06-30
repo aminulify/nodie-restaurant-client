@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    font-family: "Outfit", sans-serif;
+    scroll-behavior: smooth;
+}
+body{
+    cursor: url(./cursor1.png), auto;
+}
+.heading-font{
+    font-family: "Dancing Script", cursive;
+}
+/* sweetalert2  */
+.swal2-warning{
+    color: #506b3d !important;
+}
+
+.swiper-button-prev::after{
+    color: #506b3d;
+}
+.swiper-button-next::after{
+    color: #506b3d;
+}
+.swiper-pagination-bullet-active{
+    background: #506b3d !important;
+}
+.active{
+    text-decoration: underline;
+    color: #506b3d;
+}
+.no-active{
+    text-decoration: none;
+    color: black;
+}
+
+/* our shop tab color  */
+.tab:is(input:checked){
+    border-color: #506b3d;
+    color: #506b3d
+}
+.swal2-confirm{
+    background-color: #506b3d !important;
+}
+.swal2-cancel{
+    background-color: black !important;
+}
+.drawer-side .active{
+    color: white !important;
+    text-decoration: none !important;
+}
+
+#ratingGet div:first-child {
+  margin-top: 10px;
+}
