@@ -159,11 +159,11 @@ const Login = () => {
             </Helmet>
 
             {/* doodles  */}
-            <div className='md:hidden fixed w-[200px] right-0'>
+            <div className='md:hidden fixed w-[200px] right-0 mt-5'>
                 <img src="/assets/doodles1.png" alt="doodles" />
             </div>
             
-            <div className='w-full md:w-[85%] md:mx-32 mx-5 py-10 absolute items-center grid md:grid-cols-2 grid-cols-1 z-10'>
+            <div className='w-full md:w-[85%] md:mx-32 mx-5 py-10 absolute items-center grid md:grid-cols-2 grid-cols-1 z-10 mt-5'>
                 <div className="left-side md:flex h-[80%]">
                         <Link to="/" className="absolute text-[#597445] md:top-10 top-[-20px] md:left-0 left-5 leading-5">
                             

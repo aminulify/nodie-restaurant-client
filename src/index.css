@@ -15,6 +15,16 @@ body{
 }
 input not:input[type=submit]{
     background-color: white !important;
+    
+}
+button{
+    cursor: pointer;
+}
+input[type=submit]{
+    cursor: pointer !important;
+}
+a{
+    cursor: pointer;
 }
 
 .heading-font{

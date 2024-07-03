@@ -196,11 +196,11 @@ const Signup = () => {
             </Helmet>
 
             {/* doodles  */}
-            <div className='md:hidden fixed w-[200px] right-0 '>
+            <div className='md:hidden fixed w-[200px] right-0 mt-5'>
                 <img src="/assets/doodles1.png" alt="doodles" />
             </div>
             
-            <div className='mx-10 md:w-[85%] lg:w-[85%] md:mx-10 py-10 absolute items-center grid md:grid-cols-2 grid-cols-1 z-10'>
+            <div className='mx-10 md:w-[85%] lg:w-[85%] md:mx-10 py-10 absolute items-center grid md:grid-cols-2 grid-cols-1 z-10 mt-5'>
         
                     <div className="right-side md:pl-14 px-14 md:pt-10">
                         <h2 className='text-center text-3xl text-[#597445] font-bold'>Sign Up</h2>
