@@ -119,7 +119,7 @@ const Header = () => {
 
                     </div>
                 </div>
-                <ul tabIndex={0} className="bg-white menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 text-black rounded-box w-52">
+                <ul tabIndex={0} className="bg-white menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow text-black rounded-box w-52 ">
                     <li>
                     <a className="justify-between">
                         Profile

@@ -2,7 +2,7 @@ import React from 'react';
 
 const Loading = () => {
     return (
-        <div className='fixed z-20 mix-blend-multiply md:left-[30%] lg:left-[30%] md:top-4 lg:top-4 md:translate-x-[6%] lg:translate-x-[6%] translate-x-5'>
+        <div className='fixed z-20 mix-blend-multiply translate-x-[-50%] translate-y-[-50%] top-[45%] left-[50%]'>
             <img src="/assets/others/cupcake.gif" alt="loading..." />
         </div>
     );

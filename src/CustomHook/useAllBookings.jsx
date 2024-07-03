@@ -4,7 +4,7 @@ const useAllBookings = () => {
     const {data: allBookings=[], isLoading: loading, refetch} = useQuery({
         queryKey: ['AllBook'],
         queryFn: async()=>{
-            const res = await fetch(`https://nodie-restaurant-server.vercel.app/bookings/`);
+            const res = await fetch(`https://nodie-restaurant-server-aminulify-md-aminul-islams-projects.vercel.app/bookings/`);
             return res.json();
         }
         

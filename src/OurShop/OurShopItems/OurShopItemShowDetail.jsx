@@ -18,7 +18,7 @@ const OurShopItemShowDetail = () => {
     const {_id, category, name, recipe, image, price} = filterValue;
     
     useEffect(()=>{
-        fetch(`https://nodie-restaurant-server.vercel.app/menu/category/${id.id}`)
+        fetch(`https://nodie-restaurant-server-aminulify-md-aminul-islams-projects.vercel.app/menu/category/${id.id}`)
         .then(res=>res.json())
         .then(data=> setFilterValue(data))
     },[])
@@ -28,7 +28,7 @@ const OurShopItemShowDetail = () => {
         // console.log(item._id);
         if(user && user.email){
             const cartItem = {menuItemId: _id, category, name, image, price, email: user.email}
-            fetch('https://nodie-restaurant-server.vercel.app/carts',{
+            fetch('https://nodie-restaurant-server-aminulify-md-aminul-islams-projects.vercel.app/carts',{
                 method: 'POST',
                 headers: {
                     'content-type': 'application/json'
@@ -89,7 +89,7 @@ const OurShopItemShowDetail = () => {
             </div>
 
             {/* right side  */}
-            <div>
+            <div className=''>
                 <h1 className='text-2xl md:text-4xl font-bold'>{name ?capitalizeTitle(name) : ''}</h1>
                 <p className='my-5'>{recipe}. 
                     <br />

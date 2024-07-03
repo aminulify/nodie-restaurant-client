@@ -70,7 +70,7 @@ const AdminHome = () => {
 
     return (
     
-        <div className='w-[90%] h-screen bg-white py-10'>
+        <div className=' w-[90%] h-screen bg-white py-10'>
             <h2 className='text-3xl font-semibold text-center mb-5'><span className='heading-font text-4xl'>Welcome,</span> <span className='text-[#597445]'>{user.displayName}</span></h2>
 
             <div className="grid md:grid-cols-4 grid-cols-2 gap-3 justify-center">

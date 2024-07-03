@@ -152,7 +152,7 @@ const Login = () => {
         }
     }
     return (
-        <div className='bg-white h-screen grid place-items-center'>
+        <div className='bg-white h-screen grid place-items-center md:py-0 lg:py-0 py-5'>
             
             <Helmet>
                 <title>Nodie Cods | Login</title>
@@ -200,8 +200,10 @@ const Login = () => {
                             </div>
 
                             {/* button  */}
+                        
                             {
-                                showSubmitBtn ? <input type='submit' className='py-2 bg-[#597445] w-full text-center my-3 text-white text-[16px] hover:text-white hover:bg-black duration-300 rounded-md cursor-pointer'/> : <input type='submit' className='py-2 bg-slate-400 w-full text-center my-3 text-white text-[16px] rounded-md'/>
+                                showSubmitBtn ? <button type='submit' className='py-2 bg-[#597445] w-full text-center my-3 text-white text-[16px] hover:text-white hover:bg-black duration-300 rounded-md cursor-pointer'>Login</button> : 
+                                <button type='submit' className='py-2 bg-slate-400 w-full text-center my-3 text-white text-[16px] rounded-md'>Login</button>
                             }
                             
                         </form>

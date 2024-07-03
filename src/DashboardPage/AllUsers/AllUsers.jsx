@@ -16,7 +16,7 @@ const AllUsers = () => {
     const {loading} = useContext(AuthContext);
     // const {loading} = useContext(AuthContext);
     // useEffect(()=>{
-    //     fetch('https://nodie-restaurant-server.vercel.app/users')
+    //     fetch('https://nodie-restaurant-server-aminulify-md-aminul-islams-projects.vercel.app/users')
     //     .then(res=>res.json())
     //     .then(data=>{setAllUsers(data);
     //         console.log(data);
@@ -46,7 +46,7 @@ const AllUsers = () => {
                     
                     if (result.isConfirmed) {
                       refetch();
-                      fetch(`https://nodie-restaurant-server.vercel.app/users/${id}`,{
+                      fetch(`https://nodie-restaurant-server-aminulify-md-aminul-islams-projects.vercel.app/users/${id}`,{
                                 method: 'DELETE'
                             })
                         .then(res=>res.json())
@@ -67,7 +67,7 @@ const AllUsers = () => {
                 };
         
     const handleMakeAdmin = (user)=>{
-        fetch(`https://nodie-restaurant-server.vercel.app/users/admin/${user._id}`,{
+        fetch(`https://nodie-restaurant-server-aminulify-md-aminul-islams-projects.vercel.app/users/admin/${user._id}`,{
             method: 'PATCH'
         })
         .then(res=>res.json())

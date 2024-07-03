@@ -23,23 +23,23 @@ const Home = () => {
              <Carousel autoPlay>
                 <div className='banner-cover relative'>
                     <img src="/assets/menu/dessert-bg.jpeg" className='object-cover object-top'/>
-                    <h2 className='text-3xl md:text-7xl text-white absolute font-bold md:top-[40%] top-[45%]  left-[50%] translate-x-[-50%] z-10'><span className="heading-font text-5xl md:text-8xl">Nodie Cods</span> RESTAURANT</h2>
+                    <h2 className='text-3xl md:text-7xl lg:text-8xl text-white absolute font-bold md:top-[40%] top-[45%] lg:top-[30%]  left-[50%] translate-x-[-50%] z-10'><span className="heading-font text-5xl md:text-8xl lg:text-9xl">Nodie Cods</span> RESTAURANT</h2>
                     
                 </div>
                 <div className='banner-cover relative'>
                     <img src="/assets/menu/pizza-bg.jpg" className='object-cover object-top'/>
-                    <h2 className='text-3xl md:text-7xl text-white absolute font-bold md:top-[40%] top-[45%]  left-[50%] translate-x-[-50%] z-10'><span className="heading-font text-5xl md:text-8xl">Nodie Cods</span> RESTAURANT</h2>
+                    <h2 className='text-3xl md:text-7xl lg:text-8xl text-white absolute font-bold md:top-[40%] lg:top-[30%] top-[45%]  left-[50%] translate-x-[-50%] z-10'><span className="heading-font text-5xl md:text-8xl lg:text-9xl">Nodie Cods</span> RESTAURANT</h2>
                     
                 </div>
                 
                 <div className='banner-cover relative'>
                     <img src="/assets/menu/soup-bg.jpg" className='object-cover object-top'/>
-                    <h2 className='text-3xl md:text-7xl text-white absolute font-bold md:top-[40%] top-[45%]  left-[50%] translate-x-[-50%] z-10'><span className="heading-font text-5xl md:text-8xl">Nodie Cods</span> RESTAURANT</h2>
+                    <h2 className='text-3xl md:text-7xl lg:text-8xl text-white absolute font-bold md:top-[40%] lg:top-[30%] top-[45%]  left-[50%] translate-x-[-50%] z-10'><span className="heading-font text-5xl md:text-8xl lg:text-9xl">Nodie Cods</span> RESTAURANT</h2>
                     
                 </div>
                 <div className='banner-cover relative'>
                     <img src="/assets/menu/salad-bg.jpg" className='object-cover object-top'/>
-                    <h2 className='text-3xl md:text-7xl text-white absolute font-bold md:top-[40%] top-[45%]  left-[50%] translate-x-[-50%] z-10'><span className="heading-font text-5xl md:text-8xl">Nodie Cods</span> RESTAURANT</h2>
+                    <h2 className='text-3xl md:text-7xl lg:text-8xl text-white absolute font-bold md:top-[40%] lg:top-[30%] top-[45%]  left-[50%] translate-x-[-50%] z-10'><span className="heading-font text-5xl md:text-8xl lg:text-9xl">Nodie Cods</span> RESTAURANT</h2>
                     
                 </div>
                 

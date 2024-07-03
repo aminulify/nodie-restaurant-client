@@ -43,7 +43,7 @@ const Signup = () => {
         // send user registration data in database 
         // send user registration data in database 
         const saveUserData = {name, email, photo};
-        fetch('https://nodie-restaurant-server.vercel.app/users',{
+        fetch('https://nodie-restaurant-server-aminulify-md-aminul-islams-projects.vercel.app/users',{
             method: 'POST',
             headers: {
                 'content-type':'application/json'
@@ -110,7 +110,7 @@ const Signup = () => {
                     // send user registration data in database 
                     const saveUserData = {name: user.displayName, email:user.email, photo: user.photoURL};
             
-                    fetch('https://nodie-restaurant-server.vercel.app/users',{
+                    fetch('https://nodie-restaurant-server-aminulify-md-aminul-islams-projects.vercel.app/users',{
                         method: 'POST',
                         headers: {
                             'content-type':'application/json'
@@ -190,7 +190,7 @@ const Signup = () => {
         }
     }
     return (
-        <div className=' bg-white text-[#597445] h-screen grid place-items-center '>
+        <div className=' bg-white text-[#597445] flex justify-center mx-10 md:py-0 lg:py-0 py-5'>
             <Helmet>
                 <title>Nodie Cods | Sign Up</title>
             </Helmet>
@@ -200,9 +200,9 @@ const Signup = () => {
                 <img src="/assets/doodles1.png" alt="doodles" />
             </div>
             
-            <div className='w-[85%] md:mx-10 py-10 mt-36 absolute items-center grid md:grid-cols-2 grid-cols-1 z-10'>
+            <div className='mx-10 md:w-[85%] lg:w-[85%] md:mx-10 py-10 absolute items-center grid md:grid-cols-2 grid-cols-1 z-10'>
         
-                    <div className="right-side md:pl-14 px-14 md:mt-10">
+                    <div className="right-side md:pl-14 px-14 md:pt-10">
                         <h2 className='text-center text-3xl text-[#597445] font-bold'>Sign Up</h2>
 
                         {/* react form hook = it is good for show form error */}
@@ -248,13 +248,13 @@ const Signup = () => {
                         </form>
 
                         
-                        <div className='text-center my-2'>
+                        <div className='text-center my-2 bg-white'>
                             <Link to='/login' className='text-medium text-[#597445] hover:underline'>Already registered? Go to log in</Link>
                             <p className='text-medium text-slate-600'>Or sign Up with</p>
                         </div>
 
                         {/* icon  */}
-                        <div className='flex gap-4 text-4xl justify-center mt-2'>
+                        <div className='flex gap-4 text-4xl justify-center mt-2 bg-white'>
                             <FaFacebook onClick={handleFacebookPopUp} className='border-[1px] text-[#597445] rounded-full p-1 border-[#597445] hover:text-slate-800 duration-300 cursor-pointer' />
                             <AiFillGoogleCircle onClick={handleGooglePopUp} className='border-[1px] text-[#597445] rounded-full p-1 border-[#597445] hover:text-slate-800 duration-300 cursor-pointer' />
                             <FaGithub onClick={handleGooglePopUp} className='border-[1px] text-[#597445] rounded-full p-1 border-[#597445] hover:text-slate-800 duration-300 cursor-pointer'/>
@@ -262,7 +262,7 @@ const Signup = () => {
 
                         
                     </div>
-                    <div className="left-side h-[70%]">
+                    <div className="left-side bg-white">
                         <Link to="/" className="absolute text-[#597445] md:top-10 md:right-8 left-[-20px] top-[-10px] leading-5">
                             <h2 className='font-bold text-2xl heading-font mb-[-5px]'>Nodie Cods</h2>
                             <p className=' font-semibold tracking-[1.3px] pb-1'>RESTAURANT</p>

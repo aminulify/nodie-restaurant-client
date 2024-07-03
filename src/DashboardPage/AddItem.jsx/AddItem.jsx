@@ -55,13 +55,13 @@ const AddItem = () => {
         
     }
     return (
-        <div className='md:w-[85%] w-full py-10 bg-white'>
+        <div className=' md:w-[85%] w-full py-10 bg-white'>
             <div>
                 <SectionTitle subHeading="What's New" heading='Add an item'></SectionTitle>
             </div>
 
             {/* form  */}
-            <form onSubmit={handleAddItemSubmit} className='mx-10 product-form p-10 bg-base-200'>
+            <form onSubmit={handleAddItemSubmit} className='mx-10 product-form p-10 bg-[#e0e0e0]'>
                 <div className='form-design'>
                     <label>Recipe name*</label>
                     <input type="text" name='name' placeholder='Recipe Title' required/>

@@ -18,7 +18,7 @@ const OurShopShowItem = ({item}) => {
         // console.log(item);
         if(user && user.email){
             const cartItem = {menuItemId: _id, category, name, image, price, email: user.email}
-            fetch('https://nodie-restaurant-server.vercel.app/carts',{
+            fetch('https://nodie-restaurant-server-aminulify-md-aminul-islams-projects.vercel.app/carts',{
                 method: 'POST',
                 headers: {
                     'content-type': 'application/json'

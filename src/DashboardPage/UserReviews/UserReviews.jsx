@@ -54,7 +54,7 @@ const UserReviews = () => {
         </div>
 
         {/* form  */}
-        <form onSubmit={handleReview} className='mx-10 product-form p-10 bg-base-200'>
+        <form onSubmit={handleReview} className='mx-10 product-form p-10 bg-[#e0e0e0]'>
             <div className='form-design'>
                 <label>User Name*</label>
                 <input type="text" name='name' defaultValue={user?.displayName} placeholder='Recipe Title' readOnly/>

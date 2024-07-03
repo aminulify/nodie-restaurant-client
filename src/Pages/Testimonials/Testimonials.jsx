@@ -22,12 +22,12 @@ import SectionTitle from '../../Componenets/SectionTItle/SectionTitle';
 const Testimonials = () => {
     const [reviews, setReviews] = useState([]);
     useEffect(()=>{
-        fetch('https://nodie-restaurant-server.vercel.app/reviews')
+        fetch('https://nodie-restaurant-server-aminulify-md-aminul-islams-projects.vercel.app/reviews')
         .then(res=>res.json())
         .then(data=> setReviews(data))
     },[])
     return (
-        <div className='md:mx-36 mx-10 pb-16 bg-white'>
+        <div className='md:mx-36 mx-10 pb-16 bg-white left-aos'>
             {/* section heading title  */}
             <SectionTitle heading='Testimonials' subHeading='---What Our Clients Say---'></SectionTitle>
 

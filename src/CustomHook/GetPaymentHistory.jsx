@@ -6,7 +6,7 @@ const GetPaymentHistory = () => {
     // const {user} = useContext(AuthContext);
 
     // useEffect(()=>{
-    //     fetch(`https://nodie-restaurant-server.vercel.app/user_payout/${user.email}`)
+    //     fetch(`https://nodie-restaurant-server-aminulify-md-aminul-islams-projects.vercel.app/user_payout/${user.email}`)
     //     .then(res=>res.json())
     //     .then(data=> setPayout(data),
     

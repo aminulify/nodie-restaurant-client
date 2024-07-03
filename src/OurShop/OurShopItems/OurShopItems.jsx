@@ -27,7 +27,7 @@ const OurShopItems = () => {
     }
 
     useEffect(()=>{
-        fetch('https://nodie-restaurant-server.vercel.app/menu')
+        fetch('https://nodie-restaurant-server-aminulify-md-aminul-islams-projects.vercel.app/menu')
         .then(res=>res.json())
         .then(data =>{
             const pizzaItems = data.filter(item=>item.category==='pizza');

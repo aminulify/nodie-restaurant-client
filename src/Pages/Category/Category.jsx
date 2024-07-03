@@ -12,7 +12,7 @@ import { Pagination, Autoplay } from 'swiper/modules';
 
 const Category = () => {
     return (
-        <div className='mt-10 mb-16 md:mx-36 mx-10 grid'>
+        <div className='mt-10 mb-16 md:mx-36 mx-10 grid left-aos'>
             {/* heading  */}
             {/* heading  */}
             <SectionTitle heading="Order Online" subHeading="---From 11:00am to 10:00pm---"></SectionTitle>
@@ -34,11 +34,11 @@ const Category = () => {
                       spaceBetween: 30,
                     },
                     '@1.00': {
-                      slidesPerView: 3,
+                      slidesPerView: 4,
                       spaceBetween: 30,
                     },
                     '@1.50': {
-                      slidesPerView: 3,
+                      slidesPerView: 4,
                       spaceBetween: 30,
                     },
                   }}

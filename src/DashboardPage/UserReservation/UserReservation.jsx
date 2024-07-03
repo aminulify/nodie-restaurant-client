@@ -74,7 +74,7 @@ const UserReservation = () => {
             </div>
 
             {/* form  */}
-            <form onSubmit={handleBooking} className='mx-10 product-form p-10 bg-base-200 text-black'>
+            <form onSubmit={handleBooking} className='mx-10 product-form p-10 text-black bg-[#e0e0e0]'>
 
             <div className='grid grid-cols-2 gap-5 items-end'>
                 <div className='form-design'>

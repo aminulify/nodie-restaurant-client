@@ -3,21 +3,22 @@ import SectionTitle from '../../Componenets/SectionTItle/SectionTitle';
 import MenuItem from '../../Shared/MenuItem/MenuItem';
 import { Link } from 'react-router-dom';
 import useMenu from '../../CustomHook/useMenu';
+import Loading from '../../Shared/Loading/Loading';
 
 const Menu = () => {
     const [menu] = useMenu();
     const popularItems = menu.filter(item=>item.category==='popular');
     
     return (
-        <div>
+        <div className='left-aos'>
             <SectionTitle heading="From Our Menu" subHeading="---Check it out---"></SectionTitle>
 
             <div className='mb-6 md:mx-36 mx-10 grid grid-cols-1 md:grid-cols-2 gap-10'>
                 {
-                    popularItems.map(product=><MenuItem
+                  popularItems ? popularItems.map(product=><MenuItem
                     key={product._id}
                     product={product}
-                    ></MenuItem>)
+                    ></MenuItem>) : <Loading></Loading>
                 }
             </div>
             <div className='flex justify-center mb-10'>
