@@ -43,7 +43,7 @@ const Signup = () => {
         // send user registration data in database 
         // send user registration data in database 
         const saveUserData = {name, email, photo};
-        fetch('https://nodie-restaurant-server-aminulify-md-aminul-islams-projects.vercel.app/users',{
+        fetch('https://restaurant-cods.aminulify.com/users',{
             method: 'POST',
             headers: {
                 'content-type':'application/json'
@@ -110,7 +110,7 @@ const Signup = () => {
                     // send user registration data in database 
                     const saveUserData = {name: user.displayName, email:user.email, photo: user.photoURL};
             
-                    fetch('https://nodie-restaurant-server-aminulify-md-aminul-islams-projects.vercel.app/users',{
+                    fetch('https://restaurant-cods.aminulify.com/users',{
                         method: 'POST',
                         headers: {
                             'content-type':'application/json'

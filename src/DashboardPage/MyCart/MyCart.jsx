@@ -33,7 +33,7 @@ const MyCart = () => {
             confirmButtonText: "Yes, delete it!"
           }).then((result) => {
             if (result.isConfirmed) {
-              fetch(`https://nodie-restaurant-server-aminulify-md-aminul-islams-projects.vercel.app/carts/${item._id}`,{
+              fetch(`https://restaurant-cods.aminulify.com/carts/${item._id}`,{
                 method: 'DELETE'
               })
               .then(res=>res.json())

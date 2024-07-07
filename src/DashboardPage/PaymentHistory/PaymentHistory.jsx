@@ -10,7 +10,7 @@ const PaymentHistory = () => {
     const [payout, setPayout] = useState([]);
 
     useEffect(()=>{
-        fetch(`https://nodie-restaurant-server-aminulify-md-aminul-islams-projects.vercel.app/user_payout/${user.email}`)
+        fetch(`https://restaurant-cods.aminulify.com/user_payout/${user.email}`)
         .then(res=>res.json())
         .then(data=> setPayout(data))
     },[])

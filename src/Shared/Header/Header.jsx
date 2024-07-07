@@ -61,8 +61,8 @@ const Header = () => {
     }
 
     // using for browser console STOP text 
-    const STOPconsole = "color: red;" + "font-size: 100px;" + "font-weight: bold;";
-    console.log("%cSTOP", STOPconsole);
+    // const STOPconsole = "color: red;" + "font-size: 100px;" + "font-weight: bold;";
+    // console.log("%cSTOP", STOPconsole);
 
     return (
         <div className='bg-header'>

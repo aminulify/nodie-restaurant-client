@@ -15,7 +15,7 @@ const UseCarts = () => {
         // both way are right *****
 
         // queryFn: async() =>{
-        //     const res = await fetch(`https://nodie-restaurant-server-aminulify-md-aminul-islams-projects.vercel.app/carts?email=${user?.email}`, { headers: {
+        //     const res = await fetch(`https://restaurant-cods.aminulify.com/carts?email=${user?.email}`, { headers: {
         //         authorization: `bearer ${token}` 
         //     }})
 

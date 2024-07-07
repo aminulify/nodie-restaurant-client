@@ -18,7 +18,7 @@ const OurShopItemShowDetail = () => {
     const {_id, category, name, recipe, image, price} = filterValue;
     
     useEffect(()=>{
-        fetch(`https://nodie-restaurant-server-aminulify-md-aminul-islams-projects.vercel.app/menu/category/${id.id}`)
+        fetch(`https://restaurant-cods.aminulify.com/menu/category/${id.id}`)
         .then(res=>res.json())
         .then(data=> setFilterValue(data))
     },[])
@@ -28,7 +28,7 @@ const OurShopItemShowDetail = () => {
         // console.log(item._id);
         if(user && user.email){
             const cartItem = {menuItemId: _id, category, name, image, price, email: user.email}
-            fetch('https://nodie-restaurant-server-aminulify-md-aminul-islams-projects.vercel.app/carts',{
+            fetch('https://restaurant-cods.aminulify.com/carts',{
                 method: 'POST',
                 headers: {
                     'content-type': 'application/json'

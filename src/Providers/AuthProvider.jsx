@@ -64,7 +64,7 @@ const AuthProvider = ({children}) => {
 
             // get and set token 
             // if(currentUser){
-            //     fetch('https://nodie-restaurant-server-aminulify-md-aminul-islams-projects.vercel.app/jwt',{
+            //     fetch('https://restaurant-cods.aminulify.com/jwt',{
             //         method: 'POST',
             //         headers: {
             //             'content-type': 'application/json'
@@ -86,7 +86,7 @@ const AuthProvider = ({children}) => {
         
             if(currentUser){
                 
-                axios.post('https://nodie-restaurant-server-aminulify-md-aminul-islams-projects.vercel.app/jwt', {email:currentUser.email})
+                axios.post('https://restaurant-cods.aminulify.com/jwt', {email:currentUser.email})
                 .then(data => {
                     console.log('current user',currentUser);
                     localStorage.setItem('access-token', data.data.token);

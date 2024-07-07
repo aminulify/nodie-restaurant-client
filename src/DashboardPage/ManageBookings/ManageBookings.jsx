@@ -34,7 +34,7 @@ const ManageBookings = () => {
 
     const handleApprove = (id) =>{
         // console.log(id);
-        fetch(`https://nodie-restaurant-server-aminulify-md-aminul-islams-projects.vercel.app/bookings/${id}`,{
+        fetch(`https://restaurant-cods.aminulify.com/bookings/${id}`,{
             method: 'PATCH',
         })
         .then(res=>res.json())
