@@ -88,7 +88,6 @@ const AuthProvider = ({children}) => {
                 
                 axios.post('https://restaurant-cods.aminulify.com/jwt', {email:currentUser.email})
                 .then(data => {
-                    console.log('current user',currentUser);
                     localStorage.setItem('access-token', data.data.token);
                     setLoading(false);
                     

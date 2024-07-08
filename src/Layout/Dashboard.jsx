@@ -18,12 +18,10 @@ import { IoBookmarks } from "react-icons/io5";
 
 const Dashboard = () => {
     const [cart] = UseCarts();
-    // console.log(orderItem);
     const {user} = useContext(AuthContext);
 
     // admin role check from useAdmin.jsx
     const [isAdmin] = useAdmin();
-    // console.log(isAdmin);
     
     return (
         <div className="bg-white">

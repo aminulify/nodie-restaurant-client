@@ -11,7 +11,7 @@ import useAllBookings from '../../CustomHook/useAllBookings.jsx';
 const ManageBookings = () => {
     const [bookings, refetch] = useBookings();
     const [allBookings] = useAllBookings();
-    // console.log(allBookings);
+   
 
     const [axiosSecure] = useAxiosSecure();
 
@@ -33,7 +33,7 @@ const ManageBookings = () => {
     }
 
     const handleApprove = (id) =>{
-        // console.log(id);
+        
         fetch(`https://restaurant-cods.aminulify.com/bookings/${id}`,{
             method: 'PATCH',
         })

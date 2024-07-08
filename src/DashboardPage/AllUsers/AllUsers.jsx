@@ -14,15 +14,6 @@ const AllUsers = () => {
 
     const [axiosSecure] = useAxiosSecure();
     const {loading} = useContext(AuthContext);
-    // const {loading} = useContext(AuthContext);
-    // useEffect(()=>{
-    //     fetch('https://restaurant-cods.aminulify.com/users')
-    //     .then(res=>res.json())
-    //     .then(data=>{setAllUsers(data);
-    //         console.log(data);
-    //     });
-    //     setLoading(false);
-    // },[allUsers.length])
 
     const { data: allUsers = [], refetch, isLoading } = useQuery({
         queryKey: ['users'],
@@ -32,7 +23,7 @@ const AllUsers = () => {
           return res.data;
         },
       })
-    console.log('data load',isLoading);
+   
 
     const handledeleteFirebaseUser = (id, name) =>{
         
@@ -72,7 +63,7 @@ const AllUsers = () => {
         })
         .then(res=>res.json())
         .then(data=>{
-            // console.log(data);
+            
             if(data.modified){
                 refetch();
                 Swal.fire({

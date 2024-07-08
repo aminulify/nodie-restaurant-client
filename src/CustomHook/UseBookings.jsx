@@ -12,7 +12,7 @@ const useBookings = () => {
         }
         
     })
-    // console.log(bookings);
+   
     return [bookings, loading, refetch];
 };
 

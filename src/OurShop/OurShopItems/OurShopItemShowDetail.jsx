@@ -25,7 +25,6 @@ const OurShopItemShowDetail = () => {
 
 
     const handleAddToCart = (item) =>{
-        // console.log(item._id);
         if(user && user.email){
             const cartItem = {menuItemId: _id, category, name, image, price, email: user.email}
             fetch('https://restaurant-cods.aminulify.com/carts',{

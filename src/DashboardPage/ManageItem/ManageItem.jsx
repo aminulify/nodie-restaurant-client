@@ -30,7 +30,6 @@ const ManageItem = () => {
               axiosSecure.delete(`/menu/${item._id}`)
                 .then(res=>{
 
-                    console.log('delete',res.data);
                     refetch();
 
                     if(res.data.deletedCount>0){

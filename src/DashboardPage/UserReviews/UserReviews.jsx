@@ -27,11 +27,10 @@ const UserReviews = () => {
         const rating = ratingVal;
 
         const reviews = {name, details, rating};
-        // console.log(reviews);
 
         axiosSecure.post('/reviews', reviews)
         .then(data => {
-            console.log('reviewData', data.data)
+          
             if(data.data.insertedId){
                 Swal.fire({
                     icon: "success",

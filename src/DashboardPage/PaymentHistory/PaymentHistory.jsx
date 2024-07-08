@@ -6,7 +6,7 @@ import { useQueries } from '@tanstack/react-query';
 
 const PaymentHistory = () => {
     const {user} = useContext(AuthContext);
-    // console.log(user.email);
+  
     const [payout, setPayout] = useState([]);
 
     useEffect(()=>{
@@ -14,7 +14,6 @@ const PaymentHistory = () => {
         .then(res=>res.json())
         .then(data=> setPayout(data))
     },[])
-    // console.log(payout);
 
     
     return (

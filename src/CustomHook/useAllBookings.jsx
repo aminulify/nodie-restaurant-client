@@ -9,7 +9,7 @@ const useAllBookings = () => {
         }
         
     })
-    // console.log(bookings);
+   
     return [allBookings, loading, refetch];
 };
 

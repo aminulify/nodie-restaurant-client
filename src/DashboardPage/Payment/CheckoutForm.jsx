@@ -24,7 +24,7 @@ const CheckoutForm = ({ price, cart, refetch }) => {
         // if(price > 0){
             axiosSecure.post('/create-payment-intent', {price})
             .then(res => {
-            // console.log('payment card',res.data.clientSecret);
+            
             setClientSecret(res.data.clientSecret);
         })
         // }
@@ -51,12 +51,12 @@ const CheckoutForm = ({ price, cart, refetch }) => {
         })
 
         if(error){
-            console.log('error:', error);
+           
             setCardError(error.message);
         }
         else{
             setCardError('')
-            // console.log('PaymentMethod', paymentMethod)
+            
         }
 
 
@@ -77,11 +77,11 @@ const CheckoutForm = ({ price, cart, refetch }) => {
 
           if(confirmError){
             setCardError(confirmError.message);
-            // console.log("confirm error",confirmError);
+            
             setProcessing(false);
           }
           else{
-            // console.log('payment intent',paymentIntent);
+            
 
             setProcessing(false);
         //   recieved payment   
@@ -106,7 +106,7 @@ const CheckoutForm = ({ price, cart, refetch }) => {
                     axiosSecure.post('/payments', payment)
                     .then(res=>{
                         
-                        console.log(res.data);
+                     
                         if(res.data.insertResult.insertedId && res.data.deleteResult.deletedCount){
                             
                             Swal.fire({

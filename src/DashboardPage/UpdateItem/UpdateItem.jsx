@@ -21,12 +21,11 @@ const UpdateItem = () => {
         const price = form.price.value;
         const category = form.category.value;
         const recipe = form.recipeDetails.value;
-        // console.log({name, price, category, recipe});
 
         const data = {name, category, price, recipe};
         axiosSecure.put(`/menu/${findSimilarData._id}`, data)
         .then(data=>{
-            console.log('after posting new menu item', data.data)
+        
                     if(data.data.modifiedCount>0){
                         Swal.fire({
                             icon: "success",

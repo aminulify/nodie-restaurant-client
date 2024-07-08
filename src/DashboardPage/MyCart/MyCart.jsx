@@ -11,7 +11,6 @@ import SectionTitle from '../../Componenets/SectionTItle/SectionTitle';
 
 const MyCart = () => {
     const [ cart, refetch, isLoading ] = UseCarts();
-    // console.log('cart',cart.length);
 
     const [loading, setLoading] = useState(false);
 
@@ -38,7 +37,7 @@ const MyCart = () => {
               })
               .then(res=>res.json())
               .then(data=>{
-                console.log(data)
+               
                 if(data.deletedCount>0){
 
                     refetch();

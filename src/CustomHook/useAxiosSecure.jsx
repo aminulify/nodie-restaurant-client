@@ -17,7 +17,7 @@ const useAxiosSecure = () => {
     useEffect(() => {
       axiosSecure.interceptors.request.use(config => {
       const token = localStorage.getItem('access-token');
-      // console.log('token run',token);
+      
       if (token) {
         config.headers.Authorization = `Bearer ${token}`;
       }
@@ -28,7 +28,7 @@ const useAxiosSecure = () => {
       (response) => response,
 
       async (error) => {
-        // (error) => {
+    
     
             if (error.response && (error.response.status === 401 || error.response.status === 403)) {
             if(user){
@@ -42,9 +42,7 @@ const useAxiosSecure = () => {
     );
 
   }, [logOut, navigate, axiosSecure]);
-  // }, [navigate, axiosSecure]);
-
-
+  
   return [axiosSecure];
 };
 

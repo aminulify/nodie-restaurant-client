@@ -37,7 +37,6 @@ const Signup = () => {
         const email = form.email.value;
         const password = form.password.value;
         const photo = form.photo.value;
-        // console.log(name, photo);
         
 
         // send user registration data in database 
@@ -52,7 +51,6 @@ const Signup = () => {
         })
         .then(res=>res.json())
         .then(data=>{
-            // console.log(data);
             
             setAlreadyEmailSignUp(data?.message);
                 
@@ -86,7 +84,6 @@ const Signup = () => {
         createUser(email,password)
             .then(result=>{
                 const user = result.user;
-                // console.log(user);
 
                 updateUserProfile(name, photo)
 
@@ -104,7 +101,6 @@ const Signup = () => {
         googleAuth()
         .then((result)=>{
             const user = result.user;
-            // console.log(user);
 
                     // send user registration data in database 
                     // send user registration data in database 
@@ -150,7 +146,6 @@ const Signup = () => {
         facebookAuth()
         .then((result)=>{
             const user = result.user;
-            console.log(user);
 
             Swal.fire({
                 title: "Successfully Login!",

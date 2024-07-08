@@ -8,7 +8,6 @@ const OurShopItems = () => {
     const {category} = useParams();
     const initialIndex = categories.indexOf(category);
     const initialIndexValue = initialIndex + 1;
-    // console.log('sad',initialIndexValue);
 
     const [salad, setSalad] = useState([]);
     const [dessert, setDessert] = useState([]);
@@ -17,9 +16,6 @@ const OurShopItems = () => {
     const [drink, setDrink] = useState([]);
 
     const navigate = useNavigate();
-
-    // const [index, setIndex] = useState(1);
-    // console.log(initialIndexValue, index);
 
     const handleTabClick = (id) =>{
         // window.location.href = id

@@ -19,7 +19,7 @@ const AdminHome = () => {
             return res.data;
         }
     })
-    // console.log(stats);
+    
 
     const {data: chartData = []} = useQuery({
         queryKey: ['chart-data'],
@@ -28,7 +28,7 @@ const AdminHome = () => {
             return res.data;
         }
     })
-    // console.log(chartData);
+    
 
         const colors = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042', 'red', 'pink'];
 

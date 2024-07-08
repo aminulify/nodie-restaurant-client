@@ -15,7 +15,7 @@ const OurShopShowItem = ({item}) => {
     const [, refetch] = UseCarts();
 
     const handleAddToCart = (item) =>{
-        // console.log(item);
+      
         if(user && user.email){
             const cartItem = {menuItemId: _id, category, name, image, price, email: user.email}
             fetch('https://restaurant-cods.aminulify.com/carts',{

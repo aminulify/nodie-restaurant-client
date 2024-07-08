@@ -16,7 +16,6 @@ const Login = () => {
     const [validMsg, setValidMsg]  = useState(null);
     const [validColor, setValidColor] = useState(true);
     const [wrongEmailPass, setWrongEmailPass] = useState(null);
-    // console.log(validColor);
 
     const {signInUser, googleAuth, facebookAuth} = useContext(AuthContext);
 
@@ -34,12 +33,12 @@ const Login = () => {
         const form = e.target;
         const email = form.email.value;
         const password = form.password.value;
-        // console.log(email,password);
+      
 
         signInUser(email, password)
             .then(result=>{
                 const user = result.user;
-                // console.log(user);
+              
 
                 Swal.fire({
                     title: "Successfully Login!",
@@ -76,7 +75,7 @@ const Login = () => {
         googleAuth()
         .then((result)=>{
             const user = result.user;
-            // console.log(user);
+          
 
             Swal.fire({
                 title: "Successfully Login!",
@@ -108,7 +107,7 @@ const Login = () => {
         facebookAuth()
         .then((result)=>{
             const user = result.user;
-            // console.log(user);
+            
 
             Swal.fire({
                 title: "Successfully Login!",

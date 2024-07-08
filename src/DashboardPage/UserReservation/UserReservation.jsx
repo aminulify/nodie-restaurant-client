@@ -8,9 +8,7 @@ import Swal from 'sweetalert2';
 
 const UserReservation = () => {
     const {user} = useContext(AuthContext);
-    // console.log(user);
     const [mainTime, setMainTime] = useState('');
-    console.log(mainTime);
     const [formattedTime, setFormattedTime] = useState('');
 
     const [axiosSecure] = useAxiosSecure();
@@ -28,18 +26,16 @@ const UserReservation = () => {
 
         // time zone in 12hours 
         const timeVal = form.time.value;
-        // console.log(timeVal);
+      
         setMainTime(timeVal);
         
         covert12HoursTimeZone(mainTime);
         // console.log(formattedTime);  // 1:42 PM 
 
         const details = {name, email, guests, description, date, formattedTime, status};
-        // console.log(details);
 
         axiosSecure.post('/bookings', details)
         .then(data => {
-            // console.log(data.data);
 
             if(data.data.insertedId){
                 Swal.fire({
@@ -61,7 +57,6 @@ const UserReservation = () => {
         const [hours, minutes] = mainTime.split(":");
         const hour12 = (hours % 12) || 12; 
         const amPm = hours >= 12 ? 'PM' : 'AM'; 
-        // console.log(hours, minutes);
         
         setFormattedTime(`${hour12}:${minutes}:${amPm}`)
         return `${hour12}:${minutes}:${amPm}`;

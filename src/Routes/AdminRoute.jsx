@@ -9,7 +9,6 @@ const AdminRoute = ({children}) => {
     const {user, loading} = useContext(AuthContext);
     const [isAdmin, isAdminLoading] = useAdmin();
     const location = useLocation();
-    // console.log(location);
 
     if(loading || isAdminLoading){
         <Loading></Loading>
