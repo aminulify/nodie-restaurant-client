@@ -73,7 +73,10 @@ a{
 
 .left-aos{
     animation: leftAosAnimation;
+    --webkit-animation: leftAosAnimation;
+    --moz-animation: leftAosAnimation;
     animation-timeline: view(70% auto);
+
 }
 
 @keyframes leftAosAnimation {
@@ -86,13 +89,55 @@ a{
         opacity: 1;
     }
 }
+@-webkit-keyframes leftAosAnimation {
+    0%{
+        transform: translateY(200px) scale(0.3) translateX(200px);
+        opacity: 0;
+    }
+    66%, 100%{
+        transform: translateY(0) scale(1) translateX(0);
+        opacity: 1;
+    }
+}
+@-moz-keyframes leftAosAnimation {
+    0%{
+        transform: translateY(200px) scale(0.3) translateX(200px);
+        opacity: 0;
+    }
+    66%, 100%{
+        transform: translateY(0) scale(1) translateX(0);
+        opacity: 1;
+    }
+}
 
 .right-aos{
     animation: rightAosAnimation;
+    --webkit-animation: rightAosAnimation;
+    --moz-animation: rightAosAnimation;
     animation-timeline: view(70% auto);
 }
 
 @keyframes rightAosAnimation {
+    0%{
+        transform: translateY(200px) scale(0.3) translateX(-200px);
+        opacity: 0;
+    }
+    66%, 100%{
+        transform: translateY(0) scale(1) translateX(0);
+        opacity: 1;
+    }
+}
+@-webkit-keyframes rightAosAnimation {
+    0%{
+        transform: translateY(200px) scale(0.3) translateX(-200px);
+        opacity: 0;
+    }
+    66%, 100%{
+        transform: translateY(0) scale(1) translateX(0);
+        opacity: 1;
+    }
+}
+@-moz-keyframes rightAosAnimation {
     0%{
         transform: translateY(200px) scale(0.3) translateX(-200px);
         opacity: 0;

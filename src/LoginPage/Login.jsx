@@ -151,27 +151,13 @@ const Login = () => {
         }
     }
     return (
-        <div className='bg-white h-screen grid place-items-center md:py-0 lg:py-0 py-5'>
+        <div className='bg-white grid place-items-center'>
             
             <Helmet>
                 <title>Nodie Cods | Login</title>
             </Helmet>
-
-            {/* doodles  */}
-            <div className='md:hidden fixed w-[200px] right-0 mt-5'>
-                <img src="/assets/doodles1.png" alt="doodles" />
-            </div>
             
-            <div className='w-full md:w-[85%] md:mx-32 mx-5 py-10 absolute items-center grid md:grid-cols-2 grid-cols-1 z-10 mt-5'>
-                <div className="left-side md:flex h-[80%]">
-                        <Link to="/" className="absolute text-[#597445] md:top-10 top-[-20px] md:left-0 left-5 leading-5">
-                            
-                            <h2 className='font-bold text-2xl heading-font mb-[-5px]'>Nodie Cods</h2>
-                            <p className=' font-semibold tracking-[1.3px] pb-1'>RESTAURANT</p>
-            
-                        </Link>
-                        <img className='hidden md:block' src="assets/others/authentication2.png" alt="" />
-                    </div>
+            <div className='md:w-[500px] w-full max-w-[1000px] mx-10 md:mx-auto items-center pt-5 my-24'>
         
                     <div className="right-side md:pr-14 px-14">
     

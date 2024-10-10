@@ -61,16 +61,16 @@ const AddItem = () => {
             </div>
 
             {/* form  */}
-            <form onSubmit={handleAddItemSubmit} className='mx-10 product-form p-10 bg-[#e0e0e0]'>
+            <form onSubmit={handleAddItemSubmit} className='mx-10 product-form p-10 bg-[#f1f1f1]'>
                 <div className='form-design'>
                     <label>Recipe name*</label>
-                    <input type="text" name='name' placeholder='Recipe Title' required/>
+                    <input type="text" name='name' className='bg-white' placeholder='Recipe Title' required/>
                 </div>
                 <div className='grid grid-cols-2 gap-5 items-end'>
              
                         <div className='flex flex-col relative' ><label>Category*</label>
                         <MdOutlineExpandCircleDown className='text-[20px] text-slate-600 absolute right-3 bg-white top-9'/>
-                        <select name="category" defaultValue="Select a category" id="" className='py-3 px-3 font-semibold text-slate-600' required>
+                        <select name="category" defaultValue="Select a category" id="" className='py-3 px-3 font-semibold text-slate-600 bg-white' required>
                             <option disabled selected>Select a category</option>
                             <option value="salad">Salad</option>
                             <option value="pizza">Pizza</option>
@@ -81,12 +81,12 @@ const AddItem = () => {
                         </div>
                    
                         <div className='flex flex-col form-design'><label>Price*</label>
-                        <input type="text" name='price' placeholder='Price' required/></div>
+                        <input type="text" className='bg-white' name='price' placeholder='Price' required/></div>
                   
                 </div>
                 <div className='form-design'>
                     <label>Recipe Details*</label>
-                    <textarea name="recipeDetails" rows="5" id="" placeholder='Recipe Description...' className='p-3'></textarea>
+                    <textarea name="recipeDetails" rows="5" id="" placeholder='Recipe Description...' className='p-3 bg-white'></textarea>
                 </div>
                 <div className='form-design'>
                     <input type="file" ref={imgData} className='' name="image" id=""/>

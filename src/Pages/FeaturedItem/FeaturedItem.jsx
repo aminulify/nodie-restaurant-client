@@ -17,7 +17,7 @@ const FeaturedItem = () => {
                     <div className='mb-10 w-[50%] md:w-[30%] h-1 bg-[#cecdcddd] flex justify-center'></div>
                 </div>
 
-              <aside className='grid md:grid-cols-2 grid-cols-1 gap-5 md:gap-10 md:mx-36 items-center'>
+              <aside className='grid md:grid-cols-2 grid-cols-1 gap-5 md:gap-10 max-w-[1000px] mx-10 md:mx-auto items-center'>
              
                 <div>
                     <img src="/assets/home/featured.jpg" alt="Featured Image" className='rounded-md'/>

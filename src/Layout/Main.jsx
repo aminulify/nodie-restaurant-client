@@ -22,13 +22,14 @@ const Main = () => {
 
             {/* ( || ) OR operator. If noHeaderFooter is false then condition works true  */}
             {
-                noHeaderFooter || <Header></Header>
+            //    noHeaderFooter || <Header></Header>
+               <Header></Header>
             }
 
             <Outlet></Outlet>
 
             {
-                noHeaderFooter || <Footer></Footer>
+                <Footer></Footer>
             }
         </div>
     );

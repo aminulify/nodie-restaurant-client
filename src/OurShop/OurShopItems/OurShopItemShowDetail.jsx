@@ -80,7 +80,7 @@ const OurShopItemShowDetail = () => {
         {
             filterValue ? '' : <Loading></Loading>
         }
-        <div className='pt-32 pb-16 min-h-[80vh] md:px-20 px-10 bg-white grid md:grid-cols-2 grid-cols-1 place-items-center gap-10'>
+        <div className='pt-32 pb-16 min-h-[80vh] max-w-[1000px] mx-10 md:mx-auto bg-white grid md:grid-cols-2 grid-cols-1 place-items-center gap-10'>
             {/* left side  */}
 
             <div className='w-full'>

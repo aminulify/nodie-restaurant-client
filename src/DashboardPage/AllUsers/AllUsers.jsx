@@ -119,7 +119,7 @@ const AllUsers = () => {
                                     <th>
                                         <div onClick={()=>handleMakeAdmin(user)}>
                                             {
-                                                user.role === 'admin' ? <div className="badge badge-sm p-2 border-[#597445]">Admin</div> : <button className="p-3 bg-[#597445] rounded-sm text-white text-xl hover:bg-[#ce940c] duration-300"><FaUserShield /></button>
+                                                user.role === 'admin' ? <div className="badge badge-sm p-2 bg-[#597445] text-white border-[#597445]">Admin</div> : <button className="p-3 bg-[#597445] rounded-sm text-white text-xl hover:bg-[#ce940c] duration-300"><FaUserShield /></button>
                                             }
                                              
                                         </div>

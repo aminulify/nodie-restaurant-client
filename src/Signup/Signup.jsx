@@ -185,17 +185,13 @@ const Signup = () => {
         }
     }
     return (
-        <div className=' bg-white text-[#597445] flex justify-center mx-10 md:py-0 lg:py-0 py-5'>
+        <div className='bg-white overflow-hidden'>
             <Helmet>
                 <title>Nodie Cods | Sign Up</title>
             </Helmet>
 
-            {/* doodles  */}
-            <div className='md:hidden fixed w-[200px] right-0 mt-5'>
-                <img src="/assets/doodles1.png" alt="doodles" />
-            </div>
             
-            <div className='mx-10 md:w-[85%] lg:w-[85%] md:mx-10 py-10 absolute items-center grid md:grid-cols-2 grid-cols-1 z-10 mt-5'>
+            <div className='md:w-[500px] max-w-[1000px] mx-10  md:mx-auto pt-24 md:pt-16 pb-10'>
         
                     <div className="right-side md:pl-14 px-14 md:pt-10">
                         <h2 className='text-center text-3xl text-[#597445] font-bold'>Sign Up</h2>
@@ -256,13 +252,6 @@ const Signup = () => {
                         </div>
 
                         
-                    </div>
-                    <div className="left-side bg-white">
-                        <Link to="/" className="absolute text-[#597445] md:top-10 md:right-8 left-[-20px] top-[-10px] leading-5">
-                            <h2 className='font-bold text-2xl heading-font mb-[-5px]'>Nodie Cods</h2>
-                            <p className=' font-semibold tracking-[1.3px] pb-1'>RESTAURANT</p>
-                            </Link>
-                        <img src="/assets/others/authentication2.png" alt=""  className='md:flex hidden'/>
                     </div>
             </div>
         </div>

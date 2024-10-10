@@ -50,7 +50,7 @@ const Menu = () => {
             </Parallax>
             <div className='py-10 bg-white left-aos'>
                     <SectionTitle heading="Today's Offer" subHeading="---Don't miss these---"></SectionTitle> 
-                    <div className='mb-6 md:mx-36 mx-10 grid grid-cols-1 md:grid-cols-2 gap-10'>
+                    <div className='mb-6 max-w-[1000px] mx-10 md:mx-auto grid grid-cols-1 md:grid-cols-2 gap-10'>
                         {
                             popular.slice(0,6).map(product=><MenuItem
                             key={product._id}
@@ -80,7 +80,7 @@ const Menu = () => {
              
             </Parallax>
             <div className='py-16 bg-white right-aos'> 
-                        <div className='mb-6 md:mx-36 mx-10 grid grid-cols-1 md:grid-cols-2 gap-10'>
+                        <div className='mb-6 max-w-[1000px] mx-10 md:mx-auto grid grid-cols-1 md:grid-cols-2 gap-10'>
                             {
                                 dessert.slice(0,6).map(product=><MenuItem
                                 key={product._id}
@@ -106,7 +106,7 @@ const Menu = () => {
             </Parallax>
             
             <div className='py-16 bg-white left-aos'> 
-                    <div className='mb-6 md:mx-36 mx-10 grid grid-cols-1 md:grid-cols-2 gap-10'>
+                    <div className='mb-6 max-w-[1000px] mx-10 md:mx-auto grid grid-cols-1 md:grid-cols-2 gap-10'>
                         {
                             salad.slice(0,6).map(product=><MenuItem
                             key={product._id}
@@ -131,7 +131,7 @@ const Menu = () => {
             </Parallax>
             
             <div className='py-16 bg-white right-aos'> 
-                    <div className='mb-6 md:mx-36 mx-10 grid grid-cols-1 md:grid-cols-2 gap-10'>
+                    <div className='mb-6 max-w-[1000px] mx-10 md:mx-auto grid grid-cols-1 md:grid-cols-2 gap-10'>
                         {
                             soup.slice(0,6).map(product=><MenuItem
                             key={product._id}

@@ -56,7 +56,7 @@ const OurShopItems = () => {
     return (
         <div className='py-12 bg-white'>
 
-            <div className="nav-bar flex justify-center md:mx-36 mx-10 gap-8 font-medium">
+            <div className="nav-bar flex justify-center max-w-[1000px] mx-10 md:mx-auto gap-8 font-medium">
                 
                 <div role="tablist" className="tabs tabs-bordered">
 

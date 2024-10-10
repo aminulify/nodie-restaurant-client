@@ -12,7 +12,7 @@ import { Pagination, Autoplay } from 'swiper/modules';
 
 const Category = () => {
     return (
-        <div className='mt-10 mb-16 md:mx-36 mx-10 grid left-aos'>
+        <div className='mt-10 mb-16 grid left-aos max-w-[1000px] mx-10 md:mx-auto'>
             {/* heading  */}
             {/* heading  */}
             <SectionTitle heading="Order Online" subHeading="---From 11:00am to 10:00pm---"></SectionTitle>
