@@ -7,7 +7,7 @@ const FeaturedItem = () => {
     return (
         <div className='mb-10 pt-6 right-aos'>
             
-            <div className='featured-bg-image text-white p-16'>
+            <div className='featured-bg-image text-white md:p-16'>
                 {/* section title */}
                 {/* section title */}
                 <div className="grid place-items-center">

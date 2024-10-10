@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 
 const ContactCover = () => {
     return (
-        <div>
+        <div className='bg-white'>
             <Helmet>
                 <title>Nodie Cods | Contact Us</title>
             </Helmet>
@@ -27,7 +27,7 @@ const ContactCover = () => {
                     </div>
                 </Parallax>
 
-                <section className='max-w-[1000px] mx-10 md:mx-auto py-10 bg-white grid md:grid-cols-2 grid-cols-1 gap-10'>
+                <section className='max-w-[1000px] mx-10 md:mx-auto py-10 grid md:grid-cols-2 grid-cols-1 gap-10'>
                     {/* left side  */}
                     <div className='text-center'>
                         <h1 className='font-bold heading-font text-4xl text-[#597445]'>Hours & Location</h1>

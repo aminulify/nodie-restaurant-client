@@ -191,7 +191,7 @@ const Signup = () => {
             </Helmet>
 
             
-            <div className='md:w-[500px] max-w-[1000px] mx-10  md:mx-auto pt-24 md:pt-16 pb-10'>
+            <div className='md:w-[500px] max-w-[1000px] md:mx-auto pt-24 md:pt-16 pb-10'>
         
                     <div className="right-side md:pl-14 px-14 md:pt-10">
                         <h2 className='text-center text-3xl text-[#597445] font-bold'>Sign Up</h2>
