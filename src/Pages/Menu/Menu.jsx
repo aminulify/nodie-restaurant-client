@@ -13,7 +13,7 @@ const Menu = () => {
         <div className='left-aos'>
             <SectionTitle heading="From Our Menu" subHeading="---Check it out---"></SectionTitle>
 
-            <div className='mb-6 max-w-[1000px] mx-10 md:mx-auto grid grid-cols-1 md:grid-cols-2 gap-10'>
+            <div className='mb-6 max-w-[1000px] ml-5 mr-10 md:mx-auto grid grid-cols-1 md:grid-cols-2 gap-10'>
                 {
                   popularItems ? popularItems.map(product=><MenuItem
                     key={product._id}
