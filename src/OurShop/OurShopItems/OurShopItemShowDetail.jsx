@@ -18,7 +18,7 @@ const OurShopItemShowDetail = () => {
     const {_id, category, name, recipe, image, price} = filterValue;
     
     useEffect(()=>{
-        fetch(`https://restaurant-cods.aminulify.com/menu/category/${id.id}`)
+        fetch(`https://nodie-restaurant-api.sarkbd.com/menu/category/${id.id}`)
         .then(res=>res.json())
         .then(data=> setFilterValue(data))
     },[])
@@ -27,7 +27,7 @@ const OurShopItemShowDetail = () => {
     const handleAddToCart = (item) =>{
         if(user && user.email){
             const cartItem = {menuItemId: _id, category, name, image, price, email: user.email}
-            fetch('https://restaurant-cods.aminulify.com/carts',{
+            fetch('https://nodie-restaurant-api.sarkbd.com/carts',{
                 method: 'POST',
                 headers: {
                     'content-type': 'application/json'

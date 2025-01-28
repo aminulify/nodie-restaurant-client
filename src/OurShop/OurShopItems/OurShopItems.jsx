@@ -23,7 +23,7 @@ const OurShopItems = () => {
     }
 
     useEffect(()=>{
-        fetch('https://restaurant-cods.aminulify.com/menu')
+        fetch('https://nodie-restaurant-api.sarkbd.com/menu')
         .then(res=>res.json())
         .then(data =>{
             const pizzaItems = data.filter(item=>item.category==='pizza');

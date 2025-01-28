@@ -37,7 +37,7 @@ const AllUsers = () => {
                     
                     if (result.isConfirmed) {
                       refetch();
-                      fetch(`https://restaurant-cods.aminulify.com/users/${id}`,{
+                      fetch(`https://nodie-restaurant-api.sarkbd.com/users/${id}`,{
                                 method: 'DELETE'
                             })
                         .then(res=>res.json())
@@ -58,7 +58,7 @@ const AllUsers = () => {
                 };
         
     const handleMakeAdmin = (user)=>{
-        fetch(`https://restaurant-cods.aminulify.com/users/admin/${user._id}`,{
+        fetch(`https://nodie-restaurant-api.sarkbd.com/users/admin/${user._id}`,{
             method: 'PATCH'
         })
         .then(res=>res.json())

@@ -42,7 +42,7 @@ const Signup = () => {
         // send user registration data in database 
         // send user registration data in database 
         const saveUserData = {name, email, photo};
-        fetch('https://restaurant-cods.aminulify.com/users',{
+        fetch('https://nodie-restaurant-api.sarkbd.com/users',{
             method: 'POST',
             headers: {
                 'content-type':'application/json'
@@ -106,7 +106,7 @@ const Signup = () => {
                     // send user registration data in database 
                     const saveUserData = {name: user.displayName, email:user.email, photo: user.photoURL};
             
-                    fetch('https://restaurant-cods.aminulify.com/users',{
+                    fetch('https://nodie-restaurant-api.sarkbd.com/users',{
                         method: 'POST',
                         headers: {
                             'content-type':'application/json'

@@ -22,7 +22,7 @@ import SectionTitle from '../../Componenets/SectionTItle/SectionTitle';
 const Testimonials = () => {
     const [reviews, setReviews] = useState([]);
     useEffect(()=>{
-        fetch('https://restaurant-cods.aminulify.com/reviews')
+        fetch('https://nodie-restaurant-api.sarkbd.com/reviews')
         .then(res=>res.json())
         .then(data=> setReviews(data))
     },[])

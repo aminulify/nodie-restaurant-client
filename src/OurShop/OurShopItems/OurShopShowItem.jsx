@@ -18,7 +18,7 @@ const OurShopShowItem = ({item}) => {
       
         if(user && user.email){
             const cartItem = {menuItemId: _id, category, name, image, price, email: user.email}
-            fetch('https://restaurant-cods.aminulify.com/carts',{
+            fetch('https://nodie-restaurant-api.sarkbd.com/carts',{
                 method: 'POST',
                 headers: {
                     'content-type': 'application/json'

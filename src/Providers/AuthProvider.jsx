@@ -64,7 +64,7 @@ const AuthProvider = ({children}) => {
 
             // get and set token 
             // if(currentUser){
-            //     fetch('https://restaurant-cods.aminulify.com/jwt',{
+            //     fetch('https://nodie-restaurant-api.sarkbd.com/jwt',{
             //         method: 'POST',
             //         headers: {
             //             'content-type': 'application/json'
@@ -86,7 +86,7 @@ const AuthProvider = ({children}) => {
         
             if(currentUser){
                 
-                axios.post('https://restaurant-cods.aminulify.com/jwt', {email:currentUser.email})
+                axios.post('https://nodie-restaurant-api.sarkbd.com/jwt', {email:currentUser.email})
                 .then(data => {
                     localStorage.setItem('access-token', data.data.token);
                     setLoading(false);

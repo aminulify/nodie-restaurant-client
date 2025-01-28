@@ -5,7 +5,7 @@ import { AuthContext } from '../Providers/AuthProvider';
 
 
 const axiosSecure = axios.create({
-  baseURL: 'https://restaurant-cods.aminulify.com',
+  baseURL: 'https://nodie-restaurant-api.sarkbd.com',
 });
 
 const useAxiosSecure = () => {
