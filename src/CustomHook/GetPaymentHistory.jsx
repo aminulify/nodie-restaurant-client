@@ -6,7 +6,7 @@ const GetPaymentHistory = () => {
     // const {user} = useContext(AuthContext);
 
     // useEffect(()=>{
-    //     fetch(`https://nodie-restaurant-api.sarkbd.com/user_payout/${user.email}`)
+    //     fetch(`http://nodie-restaurant.aminulify.com/user_payout/${user.email}`)
     //     .then(res=>res.json())
     //     .then(data=> setPayout(data),
     

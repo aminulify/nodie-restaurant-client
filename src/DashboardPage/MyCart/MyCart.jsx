@@ -32,7 +32,7 @@ const MyCart = () => {
             confirmButtonText: "Yes, delete it!"
           }).then((result) => {
             if (result.isConfirmed) {
-              fetch(`https://nodie-restaurant-api.sarkbd.com/carts/${item._id}`,{
+              fetch(`http://nodie-restaurant.aminulify.com/carts/${item._id}`,{
                 method: 'DELETE'
               })
               .then(res=>res.json())

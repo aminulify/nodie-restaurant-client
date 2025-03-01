@@ -4,7 +4,7 @@ const useMenu = () => {
     const {data: menu=[], isLoading: loading, refetch} = useQuery({
         queryKey: ['menu'],
         queryFn: async()=>{
-            const res = await fetch('https://nodie-restaurant-api.sarkbd.com/menu');
+            const res = await fetch('http://nodie-restaurant.aminulify.com/menu');
             return res.json();
         }
         

@@ -34,7 +34,7 @@ const ManageBookings = () => {
 
     const handleApprove = (id) =>{
         
-        fetch(`https://nodie-restaurant-api.sarkbd.com/bookings/${id}`,{
+        fetch(`http://nodie-restaurant.aminulify.com/bookings/${id}`,{
             method: 'PATCH',
         })
         .then(res=>res.json())

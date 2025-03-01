@@ -4,7 +4,7 @@ const useAllBookings = () => {
     const {data: allBookings=[], isLoading: loading, refetch} = useQuery({
         queryKey: ['AllBook'],
         queryFn: async()=>{
-            const res = await fetch(`https://nodie-restaurant-api.sarkbd.com/bookings/`);
+            const res = await fetch(`http://nodie-restaurant.aminulify.com/bookings/`);
             return res.json();
         }
         
