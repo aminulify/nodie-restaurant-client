@@ -1,4 +1,4 @@
-﻿<h3>Project: OpenAI DALL·E – Full Stack Image Generation Web Application (Clone)</h3>
+﻿<h3>Project: Restaurant eCommerce Project</h3>
 <p><b>Used Language/Library/Frameworks/Tools (Full Stack):</b> <span style="color:blue;">HTML5, CSS3, Tailwind CSS, React, React Router, Axios, OpenAI API Integration, Node Js, Express Js, MongoDB, Vercel, Github, Git.</span></p>
 <h4>Features:</h4>
 <ul type="square" style="display:flex; gap:5px; margin-bottom:10px;">
